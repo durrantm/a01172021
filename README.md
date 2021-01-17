@@ -15,7 +15,7 @@ This application uses two APIs - rapidapi and openweathermap.
 I created an openweathermap key and that is in the .env file in that branch
 
 You will need a rapidapi key from rapidapi.com.  They have freemium plans.  I am using redline zipcode and weatherapi but this covers them both.
-I don't give mine out because it is easy to have overage charges.  You do need a credit card to sign up but you can use the free plan assuming you don't incur overages.
+I don't give mine out because it is easy to have overage charges.  You do need a credit card to sign up but you can use the free plan assuming you don't incur overages. The key also goes in the .env file (placeholder placed).
 
 I learned quickly to be careful about my useRef / useCallback API calls and the dependency array.  It is easy to get runaway PAI calls many thousands per second if yopu are not careful.
 
