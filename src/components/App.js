@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import { BrowserRouter as Router, Switch, Route, Redirect, useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
@@ -29,7 +30,11 @@ function App() {
       timeZone: response.data.timezone.timezone_abbr,
     });
   };
+  // const query = URLSearchParams(useLocation().search);
   useEffect(() => {
+    // const queryZip = query().get("zip");
+    // console.log(queryZip);
+    // If queryZip && queryZip !== '' setZip(queryZip);  // but what about then changing via the form?
     if (zip.length === 5 && !isNaN(zip)) {
       // Axios call #1 for zip, town, state and Timezone (top header)
       axios.request(redlineZipcodeLocation)
