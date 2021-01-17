@@ -5,7 +5,7 @@ Currently the application uses a form with an input field for the zip code.
 The task in this request is to add the capability to use a request query parameter, e.g. ?zip=90210 in the URL
 The abilitry to use the form to change it subsequently should remain.
 
-My initial attempt includes code at lines 2 and lines 35037 in branch zip_from_query_params
+My initial attempt includes code at lines 2 and lines 35 - 37 in branch zip_from_query_params
 
 I want to be able to use links to the app both internally ands externally that pass in the zip code.  
 This is in addition to the user being able to use the form to change the zip code.
